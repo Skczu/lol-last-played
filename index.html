@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Last Played</title>
+
+    <meta name="description" content="Simple site based on Riot Developer API">
+    <meta name="keywords"
+         content="lol, league of legends, champion, check, play, time">
+    <meta name="author" content="Skczu">
+    <link rel="icon" type="image/png" href="media/icon_64.png">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div class="title">
+        <h1>When did you last play a LoL champion?</h1>
+   </div>
+   <div>
+        <input class="js-chname" type="text" placeholder="Champion">
+        <input class="js-gname" type="text" placeholder="In-game name (only EUNE)">
+        <div class="button-div">
+            <button class="button"><span>Check </span></button>
+        </div>
+   </div>
+   <div>
+        <p class="result"></p>
+        <!-- Your last Gangplank game was played on -->
+        <p class="result-date"></p>
+        <!-- 12/7/2020, 1:27:18 PM GMT+1 -->
+   </div>
+   <div class="footer">
+     <a href="https://github.com/Skczu/lol-last-played">Skczu/LoLLastPlayed</a>
+   </div>
+
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
