@@ -4,7 +4,7 @@
 
 Simple site to check when was the last time you played a League of Legends champion
 
-[Link to site](https://skczu.github.io/lol-last-played/)
+[Link to site](https://skczu.github.io/lol-last-played/index.html)
 
 ## Description
 
