@@ -67,7 +67,7 @@ UI.InputErr = function(i) {
 RiotAPI = {};
 
 RiotAPI.ChampionId = function(championName, username) {
-    let ddragonUrl = 'http://ddragon.leagueoflegends.com/cdn/11.2.1/data/en_US/champion.json';
+    let ddragonUrl = 'https://ddragon.leagueoflegends.com/cdn/11.2.1/data/en_US/champion.json';
     let lowerName = championName.toLowerCase();
     let name = titleCase(lowerName).replace(/\s+/g, '');
 
