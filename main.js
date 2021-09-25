@@ -13,6 +13,10 @@ function titleCase(str) {
     return splitStr.join(' '); 
 }
 
+// Links
+const SUMM_ID = "https://mjo0lafvfd.execute-api.eu-west-3.amazonaws.com/riotsummID?summ=";
+const CH_ID = "https://mjo0lafvfd.execute-api.eu-west-3.amazonaws.com/riotMastery?summ=";
+
 // Interface object
 UI = {};
 
@@ -89,7 +93,7 @@ RiotAPI.ChampionId = function(championName, username) {
 }
 
 RiotAPI.UserId = function(cID, username, championName) {
-    let userUrl = links.SUMM_ID + username;
+    let userUrl = SUMM_ID + username;
 
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -105,7 +109,7 @@ RiotAPI.UserId = function(cID, username, championName) {
 }
 
 RiotAPI.ChampMastery = function(sumID, cID, championName) {
-    let masteryUrl = links.CH_ID + sumID + '&champ=' + cID;
+    let masteryUrl = CH_ID + sumID + '&champ=' + cID;
 
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
